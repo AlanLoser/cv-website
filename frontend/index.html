@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>Owen Liu｜Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            background-color: #f5f7fb;
+            color: #222;
+        }
+
+        /* Header 導覽列 */
+        header {
+            position: sticky;
+            top: 0;
+            background: white;
+            padding: 16px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+        }
+
+        .logo {
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+        nav a {
+            margin-left: 24px;
+            text-decoration: none;
+            color: #444;
+            font-size: 15px;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            color: #1d4ed8;
+        }
+
+        /* Hero 主區塊 */
+        .hero {
+            max-width: 1000px;
+            margin: 60px auto;
+            display: flex;
+            align-items: flex-start;
+            padding: 20px;
+        }
+
+        .left {
+            width: 360px;
+            text-align: center;
+            margin-right: 50px;
+        }
+
+        .avatar {
+            width: 350px;        /* 照片變大 */
+            height: 280px;       /* 可以依照片比例微調 */
+            border-radius: 16px; 
+            object-fit: cover;   
+            box-shadow: 0 6px 18px rgba(0,0,0,0.18);
+        }
+
+
+        .contact-bar {
+    
+    width: 94%;
+    margin-top: 80px;
+
+    background: white;
+    box-shadow: 0 -2px 10px rgba(0,0,0,0.06);
+
+    padding: 25px 40px;
+    display: flex;
+    text-align: center;;
+    justify-content: center;
+    gap: 50px;
+
+    font-size: 16px;
+    color: #374151;
+}
+
+
+
+        .contact-bar a {
+            color: #1d4ed8;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .contact-bar span {
+            white-space: nowrap; /* 避免換行 */
+        }
+
+
+        /* 右邊自介文字 */
+        .right {
+            flex: 1;
+        }
+
+        .intro-title {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 14px;
+        }
+
+        .intro-text {
+            font-size: 17px;
+            line-height: 1.75;
+            margin-bottom: 16px;
+            color: #444;
+        }
+
+        .tags span {
+            display: inline-block;
+            background: #e0e7ff;
+            padding: 6px 12px;
+            border-radius: 20px;
+            margin-right: 8px;
+            margin-bottom: 6px;
+            font-size: 13px;
+            color: #1e3a8a;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- 導覽列 -->
+<header>
+    <div class="logo">Owen's Resume</div>
+    <nav>
+        <a href="experience.html">Experience</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact Me</a>
+    </nav>
+</header>
+
+<!-- 主視覺（左圖右文） -->
+<div class="hero">
+
+    <!-- 左側：你的大頭照 & 聯絡方式 -->
+    <div class="left">
+        <!-- 改成你的圖片名稱，例如 profile.jpg -->
+        <img class="avatar" src="photo/圖片1.jpg" alt="profile photo">
+
+        
+    </div>
+    
+
+
+    <!-- 右側自介 -->
+    <div class="right">
+        <div class="intro-title">Hi, I'm Owen Liu 👋</div>
+
+        <div class="intro-text">
+            My name is Owen Liu. I specialize in
+            <b>AI model design</b>, <b>embedded IoT</b>, and <b>communications and RF</b>,
+            with a strong ability to apply theory to complete system implementations.
+        </div>
+
+        <div class="intro-text">
+            I have a strong interest in <b>AI × IoT × Cybersecurity</b> and aspire to become an engineer 
+            who can bridge software, firmware, and system architecture. I enjoy solving problems and 
+            working on projects that can be realistically deployed in the field.
+        </div>
+
+        <div class="tags">
+            <span>AI</span>
+            <span>IoT</span>
+            <span>Embedded systems</span>
+            <span>Cybersecurity</span>
+            <span>firmAE</span>
+        </div>
+    </div>
+    
+</div>
+<div class="contact-bar">
+    📱 Phone：<b>0939-262-260</b><br>
+    📧 Gmail：<b>B11115034@mail.ntust.edu.tw</b><br>
+    🐱 GitHub：<a href="https://github.com/AlanLoser" target="_blank">github.com</a>
+    </div>
+</body>
+</html>

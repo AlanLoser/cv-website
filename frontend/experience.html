@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>Experience｜Owen Liu</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #f7f9fc;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            color: #1f2937;
+        }
+
+        header {
+            background: white;
+            padding: 16px 40px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header a {
+            text-decoration: none;
+            color: #374151;
+            margin-left: 24px;
+            font-size: 15px;
+            font-weight: 500;
+        }
+
+        a:hover {
+            color: #1d4ed8;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 60px auto;
+            padding: 0 20px;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .exp-item {
+            background: white;
+            padding: 20px 28px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+            margin-bottom: 20px;
+        }
+
+        .exp-title {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
+
+        .exp-time {
+            font-size: 14px;
+            color: #6b7280;
+            margin-bottom: 12px;
+        }
+
+        .exp-desc {
+            font-size: 15px;
+            line-height: 1.6;
+        }
+        /* 讓文字與圖片呈現左右排列 */
+        .exp-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+        }
+
+/* 小圖片設定：正方形 + 圓角 + 陰影 */
+        .exp-img {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.10);
+        }
+
+    </style>
+</head>
+
+<body>
+
+<!-- 導覽列（跟首頁一樣） -->
+<header>
+    <div class="logo">Owen's Resume</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact Me</a>
+    </nav>
+</header>
+
+<!-- 經驗內容 -->
+<div class="container">
+    <h1>Experience</h1>
+    <h2>Major in NTUST Computer Science</h2>
+
+    <!-- 每個經驗項目一塊卡片 -->
+     <div class="exp-item">
+    <div class="exp-content">
+        <div>
+            <div class="exp-title">Zero-Knowledge Proof</div>
+            <div class="exp-time">2024 | Cryptography Analysis</div>
+            <div class="exp-desc">
+            Analyzed and implemented various Zero-Knowledge Proof protocols, including zk-SNARKs and zk-STARKs, to understand their applications in blockchain technology and secure communications.
+            Using these protocols to apply in O-RAN architecture for enhancing 5G network security and privacy.
+            </div>
+        </div>
+
+        <!-- 右側小圖片（正方形） -->
+        <img class="exp-img" src="photo/Zero-knowledge.jpg" alt="Zero Knowledge Proof">
+    </div>
+</div>
+
+    <div class="exp-item">
+    <div class="exp-content">
+        <div>
+            <div class="exp-title">Fuzz-Driven MQTT Edge Defense</div>
+            <div class="exp-time">2024-2025 | Group Project</div>
+            <div class="exp-desc">
+            Evaluate CNN and Transformer-based models for MQTT intrusion detection using fuzzing techniques to enhance IoT edge security.
+            Moreover, develop an edge defense system that integrates the best-performing model to protect IoT devices from MQTT-based attacks.
+            </div>
+        </div>
+
+        <!-- 右側小圖片（正方形） -->
+        <img class="exp-img" src="photo/MQTT.png" alt="Fuzz-Driven MQTT Edge Defense">
+    </div>
+</div>
+<div class="exp-item">
+    <div class="exp-content">
+        <div>
+            <div class="exp-title">Hybrid Malware Detection</div>
+            <div class="exp-time">2025 | Group Project</div>
+            <div class="exp-desc">
+            Using CNN models to evaluate the static, pcap, api call sequence features of malware.
+            Combining multiple feature types to enhance malware detection accuracy and robustness.
+            </div>
+        </div>
+
+        <!-- 右側小圖片（正方形） -->
+        <img class="exp-img" src="photo/圖片2.png" alt="Hybrid Malware Detection">
+    </div>
+</div>
+
+
+</div>
+
+</body>
+</html>
